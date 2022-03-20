@@ -1,0 +1,16 @@
+body {
+  font-family: "Dosis", sans-serif;
+  background: #030000;
+  color: white;
+  text-align: center;
+}
+.main {
+  margin-top: 180px;
+  margin-right: 200px;
+  margin-left: 200px;
+  color: black;
+}
+
+#chart {
+  width: 24rem;
+}
