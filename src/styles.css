@@ -1,16 +1,31 @@
 body {
   font-family: "Dosis", sans-serif;
   background: #030000;
-  color: white;
+  color: #ffffff;
   text-align: center;
 }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
 .main {
-  margin-top: 180px;
+  margin-top: 2rem;
   margin-right: 200px;
   margin-left: 200px;
-  color: black;
+}
+nav {
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+#chart {
+  width: 20rem;
 }
 
-#chart {
-  width: 24rem;
+footer {
+  position: absolute;
+  bottom: 1rem;
+  color: black;
+  margin: auto;
+  width: 100%;
 }
