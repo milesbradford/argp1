@@ -1,3 +1,9 @@
+body {
+  font-family: "Font Awesome 5 Free";
+  content: "\f061";
+  font-weight: 900;
+}
+
 .black-background {
   font-family: "Dosis", sans-serif;
   background: #030000;
