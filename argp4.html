@@ -38,6 +38,7 @@
     n1.addChild(n11);
     n2.addChild(n22);
    n3.addChild(n31);
+   
     // n3.setEnabled(false);
   
     var tree = new TreeView(root, "#container", {
@@ -46,5 +47,7 @@
       open_icon: "<span>&#9698;</span>",
       close_icon: "<span>&#9654;</span>"
     });
+    tree.collapseAllNodes();
+
   </script>
 </html>
