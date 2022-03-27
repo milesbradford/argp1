@@ -1,19 +1,52 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap"
-      rel="stylesheet"
-    />
 
-    <link href="styles.css" rel="stylesheet" />
-  </head>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet" />
 
-  <body class="black-background">
-    <h4 style="color: white;">
-      test test
-    </h4>
-  </body>
+  <link href="styles.css" rel="stylesheet" />
+  <script src="treejs/tree.js"></script>
+  <link rel="stylesheet" href="treejs/treejs.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+ 
+</head>
+// https://www.cssscript.com/folder-tree-treejs/
+<body class="black-background">
+  <h4 style="color: white;">
+    test test
+  </h4>
+
+  <div id="container"></div>
+
+</body>
+<script>
+
+  var root = new TreeNode("root");
+  n1 = new TreeNode("1");
+  n11 = new TreeNode("1.1");
+  n2 = new TreeNode("2");
+  n3 = new TreeNode("3");
+  n31 = new TreeNode("3.1");
+  n32 = new TreeNode("3.2");
+  n321 = new TreeNode("3.2.1");
+  n33 = new TreeNode("3.3");
+  root.addChild(n1);
+  root.addChild(n2);
+  root.addChild(n3);
+  n1.addChild(n11);
+  n3.addChild(n31);
+  n3.addChild(n32);
+  n3.addChild(n33);
+  n3.setEnabled(false);
+  n32.addChild(n321);
+  var tree = new TreeView(root, "#container",{
+    leaf_icon: "<span>&#128441;</span>",
+    parent_icon: "<span>&#128449;</span>",
+    open_icon: "<span>&#9698;</span>",
+    close_icon: "<span>&#9654;</span>"    
+  });
+</script>
 </html>
