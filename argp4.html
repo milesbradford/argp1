@@ -18,9 +18,6 @@
     />
   </head>
   <body class="black-background">
-    
-    </h4>
-
     <div id="container"></div>
   </body>
   <script>
@@ -28,19 +25,19 @@
     n1 = new TreeNode("1");
     n11 = new TreeNode("1.1");
     n2 = new TreeNode("2");
-    n22 = new TreeNode("2.2 secret file")
+    n22 = new TreeNode("2.2 secret file");
     n3 = new TreeNode("3");
     n31 = new TreeNode("3.1");
-    
+
     root.addChild(n1);
     root.addChild(n2);
     root.addChild(n3);
     n1.addChild(n11);
     n2.addChild(n22);
-   n3.addChild(n31);
-   
+    n3.addChild(n31);
+
     // n3.setEnabled(false);
-  
+
     var tree = new TreeView(root, "#container", {
       leaf_icon: "<span>&#128441;</span>",
       parent_icon: "<span>&#128449;</span>",
@@ -48,6 +45,5 @@
       close_icon: "<span>&#9654;</span>"
     });
     tree.collapseAllNodes();
-
   </script>
 </html>
